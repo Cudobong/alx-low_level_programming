@@ -1,12 +1,15 @@
-#include <stdio.h>
 #include <unistd.h>
+
 /**
- * main - prints the piece of art is useeful
- * return - 1 (when successful)
-*/
+ * main - Entry point
+ *
+ * Return: Always 1 (error)
+ */
 int main(void)
 {
-	char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2, msg, sizeof(msg) - 1);
+	char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(STDERR_FILENO, message, 41);
+
 	return (1);
 }
