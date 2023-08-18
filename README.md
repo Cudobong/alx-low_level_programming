@@ -1,1 +1,1 @@
-!& C lang
+This is my first C programming
